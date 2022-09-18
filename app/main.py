@@ -47,9 +47,7 @@ def app():
                 winnerId = 4    
 
         except Exception as e :
-            data = {'err': e}
-
-            # winnerId = 4    
+            winnerId = 4    
 
         finally :
             data = {'ret': winnerId}
