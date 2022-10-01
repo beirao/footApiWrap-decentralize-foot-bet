@@ -2,9 +2,13 @@ from fastapi import FastAPI
 from dotenv import load_dotenv
 import requests
 import json, os
+import logging
+
 
 def app():
     load_dotenv()
+    logging.basicConfig(filename="ext/log_wapi.txt", level=logging.INFO,
+        format="%(asctime)s %(levelname)s %(message)s")
     app = FastAPI()
 
 
@@ -44,9 +48,13 @@ def app():
                 else:
                     winnerId = 4
             else :
-                winnerId = 4    
+                winnerId = 4  
+
+            logging.info(f"Called {winnerId}")
+
 
         except Exception as e :
+            logging.error(f"Error : {e}")
             winnerId = 4    
 
         finally :

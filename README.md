@@ -49,19 +49,17 @@ http://127.0.0.1:8000/{match_id}
 ## Build
 
 ```bash
-sudo docker build -t slim-ea-dbet .
+sudo docker build -t wrap-api-bet .
 ```
-
-## Create image
 
 ## Run image
 
 ```bash
-sudo docker run -p 80:80 slim-ea-dbet
+sudo docker run -p 80:80 -d -v dst:src wrap-api-bet
 ```
 
 ## Save the image
 
 ```bash
-sudo docker save -o slim-ea-dbet.tar slim-ea-dbet
+sudo docker save -o wrap-api-bet.tar wrap-api-bet
 ```

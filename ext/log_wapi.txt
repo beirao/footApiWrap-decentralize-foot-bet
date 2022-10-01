@@ -1,0 +1,9 @@
+2022-09-30 12:33:26,101 INFO Started server process [86756]
+2022-09-30 12:33:26,101 INFO Waiting for application startup.
+2022-09-30 12:33:26,101 INFO Application startup complete.
+2022-09-30 12:33:42,899 INFO Called 3
+2022-09-30 12:33:45,075 INFO Called 3
+2022-09-30 12:34:46,334 INFO Shutting down
+2022-09-30 12:34:46,435 INFO Waiting for application shutdown.
+2022-09-30 12:34:46,436 INFO Application shutdown complete.
+2022-09-30 12:34:46,436 INFO Finished server process [86756]
