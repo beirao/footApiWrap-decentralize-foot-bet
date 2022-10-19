@@ -1,12 +1,12 @@
 # Foot API wrap for [backend-decentralize-foot-bet](https://github.com/beirao/backend-decentralize-foot-bet)
 
-## This FastAPI API implement [Uvicorn](https://www.uvicorn.org/) as WSGI server
+This FastAPI API implement [Uvicorn](https://www.uvicorn.org/) as WSGI server
 
-## Input Params
+### Input Params
 
 - `matchId`: The ID of the match you want the winner.
 
-## Output
+### Output
 
 ```
 SCHEDULED | IN GAME => 0
@@ -36,29 +36,27 @@ pip install -m requirements.txt
 uvicorn app.main:app --reload --factory
 ```
 
-## All GET requests
-
-### Get all deployed contract
+## Get the winner for a given match
 
 ```url
 http://127.0.0.1:8000/{match_id}
 ```
 
-# Docker
+## Docker
 
-## Build
+### Build
 
 ```bash
 sudo docker build -t wrap-api-bet .
 ```
 
-## Run image
+### Run image
 
 ```bash
 sudo docker run -p 80:80 -d -v dst:src wrap-api-bet
 ```
 
-## Save the image
+### Save the image
 
 ```bash
 sudo docker save -o wrap-api-bet.tar wrap-api-bet
